@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="shortcut icon" href="../static/Images/student.png" type="image/x-icon">
+    <title>#{title}</title>
+</head>
+<body>
+    <header>
+        <h1>Register Your School Student Here</h1>
+    </header>
+    <div class="container3">
+        <div class="para">
+            <p><b>#{msg}</b></p>
+        </div>
+        <form action="/stRegister" method="post">
+            <input type="text" placeholder="Enter Student's name" required name="name" class="form-control">
+            <input type="email" placeholder="Enter Student's email address" required name="email" class="form-control">
+            <input type="tel" placeholder="Enter Student's Phone Number" required name="phone" class="form-control">
+            <label for="exampleInputEmail1" class="form-label"><b>Student's date of admission</b></label>
+            <input type="date" placeholder="Date of student's admission" required name="date" class="form-control">
+            <label for="exampleInputEmail1" class="form-label"><b>Student's Date of birth</b></label>
+            <input type="date" placeholder="Enter Student's DOB" required name="dob" class="form-control">
+            <input type="text" placeholder="Enter Student's Address" required name="address" class="form-control">
+            <input type="number" placeholder="Enter class of student" name="class" required min="1" max="12" class="form-control">
+            <input type="text" placeholder="Enter stream of student" name="stream" class="form-control">
+            <input type="password" placeholder="Enter Student's Pasword" required name="password" class="form-control">
+            <button id="btn2" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
